@@ -1,0 +1,6 @@
+[submodule "chezmoi"]
+	path = chezmoi
+	url = https://github.com/twpayne/chezmoi
+[submodule "delta"]
+	path = delta
+	url = https://github.com/dandavison/delta
