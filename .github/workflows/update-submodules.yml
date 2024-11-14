@@ -32,7 +32,7 @@ jobs:
               git fetch
 
               current_tag=$(git describe --tag)
-              latest_tag=$(git tag --list --sort=-version:refname | head -n 1)
+              latest_tag=$(git tag --list --sort=-version:refname | grep "^[0-9]" | head -n 1)
 
               git checkout "tags/${latest_tag}"
 
